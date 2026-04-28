@@ -1,0 +1,32 @@
+{
+  "name": "bip322-multisig-cli",
+  "version": "0.1.0",
+  "description": "CLI to sign DFX auth challenges with a Bitcoin P2WSH multisig wallet using Sparrow as the PSBT signer (BIP-322 simple)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DFXswiss/bip322-multisig-cli.git"
+  },
+  "bugs": {
+    "url": "https://github.com/DFXswiss/bip322-multisig-cli/issues"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "bin": {
+    "bip322-sign": "bin/sign.js",
+    "bip322-finalize": "bin/finalize.js"
+  },
+  "files": [
+    "bin",
+    "LICENSE",
+    "README.md"
+  ],
+  "dependencies": {
+    "@bitcoinerlab/secp256k1": "^1.2.0",
+    "bech32": "^2.0.0",
+    "bip32": "^4.0.0",
+    "bip322-js": "^3.0.0",
+    "bitcoinjs-lib": "^6.1.7"
+  }
+}
